@@ -8,7 +8,7 @@ You should now have Kafka 0.9 running at `localhost:9092` and zookeeper running 
 
 ##### Run a producer:
 
-`sbt "run producer my-topic 50"` will send `50` messages (1 per second) with the topic `my-topic`. 
+`sbt "run producer my-topic 50"` will send `50` messages (1 per second) in the topic `my-topic`. 
 
 ##### Run consumers:
 
