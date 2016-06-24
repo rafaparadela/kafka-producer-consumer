@@ -4,12 +4,13 @@ Minimal implementation of Kafka client 0.9 producer & consumer.
 
 ### Quick Start:
 
-You should now have Kafka 0.9 running at `localhost:9092` and zookeeper running at `localhost:2181`.`
+You should now have Kafka 0.9 running at `localhost:9092` and zookeeper running at `localhost:2181`.
 
 ##### Run a producer:
 
-`sbt "run producer my-topic 50"` where `my-topic` is the topic, and `50` is the number of messages delivered (1 per second). 
+`sbt "run producer my-topic 50"` will send `50` messages (1 pe second) with the topic `my-topic`. 
 
 ##### Run consumers:
 
-`sbt "run consumer my-topic my-group-id"` where `my-topic` is the topic, and `my-group-id` is the groupId. 
+`sbt "run consumer my-topic my-group-id"` will subscribe to the topic `my-topic` using the groupId `my-group-id`.
+
